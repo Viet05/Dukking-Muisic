@@ -187,7 +187,7 @@ const app = {
                     (audio.currentTime * 100) / audio.duration
                   );
                   progress.value = progressPercent;
-                 
+                  progress.style.background = `linear-gradient(to right, #ec1f55 ${progressPercent}%  , #D3D3D3 ${progressPercent}% )`;
                 }
               }, 500);
               // Cập nhật trạng phái ở chế độ play
